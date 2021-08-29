@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<title>Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+​
+.menu {
+  display: none;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+</style>
+<body>
+​
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="index.html#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="load.html" class="w3-button w3-block w3-black">GALLERY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="index.html#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div><br><br><br>
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <div class="w3-opacity">
+    
+    <div class="w3-clear"></div>
+    <header class="w3-center w3-margin-bottom">
+      <h1><i>Services</i></h1>
+    </header>
+    </div>
+</div>
+
+<!-- Menu Container -->
+    <div class="w3-content" style="max-width:auto;">
+   
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Facials');" id="myLink">
+          <div class="w3-col s3 tablink">Facials</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Spa Sessions');">
+          <div class="w3-col s3 tablink">Spa Sessions</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Body Massage');">
+            <div class="w3-col s3 tablink">Body Massage</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'WAX');">
+            <div class="w3-col s3 tablink">WAX</div>
+          </a>
+      </div>
+  
+      <div id="Facials" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Mature Skin Treatment</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+        <h5>Anti Pigmentation</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+
+        <h5>Anti Acne</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+
+        <h5>Anti Darkness & Dullness</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+
+        <h5>Regular Facials</h5>
+        <p class="w3-text-grey">Price Range(Rs.300 - Rs.1000)</p>
+        <p class="w3-text-grey"> Description: For Dry, oily or sensitive skin</p><br>
+
+        <h5>Treatment Facials</h5>
+        <p class="w3-text-grey">Price Range(Rs.1500 - Rs.3000)</p>
+        <p class="w3-text-grey">Description: Scar-Spot removal , Whitening Treatment , Skin Polishing</p><br>
+
+        <h5>Advance  Facials</h5>
+        <p class="w3-text-grey">Price Range(Rs.2500 - Rs.3000)</p>
+        <p class="w3-text-grey">Description: with pure organic product , essential oil, real fruit preservita , gold leaves, pearl dust, silver leaf</p><br>
+        
+
+      
+      </div>
+  
+      <div id="Spa Sessions" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Body Spa</h5>
+        <p class="w3-text-grey">Description: with 5 stages</p><br>
+      
+        <h5>Hair Spa</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+        <h5>Manicure & Pedicure Spa</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+
+      </div> 
+
+      <div id="Body Massage" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Steam Massage Therapy</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+        <h5>Potli Massage Therapy</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+        <h5>Tissue Massage Therapy</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+        
+      </div> 
+
+      <div id="WAX" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Regular Wax</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+        <h5>Milk Wax</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+        <h5>Liposoluble Wax</h5>
+        <p class="w3-text-grey">Prices Vary</p><br>
+      
+       
+      </div> 
+    </div>
+  
+    <!-- Pagination -->
+ <div class="w3-center">
+    <div class="pagination">
+     <a href="services.html">&laquo;</a>
+     <a href="services.html">1</a>
+     <a href="">2</a>
+     <a href="">&raquo;</a>
+   </div>
+   </div>
+  <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+    </script>
+  
+</body>
+</html>
